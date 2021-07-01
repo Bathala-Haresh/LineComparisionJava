@@ -12,7 +12,7 @@ public class LineComparision
 	    
 	    //converting method in double to string
 	    String x=Double.toString(distance());
-        String y=Double.toString(distance());
+            String y=Double.toString(distance());
         
         //comparing both the string values using compareTo method
 	    double c=x.compareTo(y);
