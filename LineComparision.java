@@ -1,5 +1,5 @@
 /**
-* This program is to compare two lines and find whether two lines are equal or not
+* This program is to compare two lines and find whether two lines are equal,greater or less than other line
 *
 * @author  Bathala Haresh
 */
@@ -14,14 +14,17 @@ public class LineComparision
 	    String x=Double.toString(distance());
         String y=Double.toString(distance());
         
-        //comparing both the string values using equals method
-	    
-	    if(x.equals(y))
+        //comparing both the string values using compareTo method
+	    double c=x.compareTo(y);
+	    if(c == 0)
         {
             System.out.println("equal");
         }
+        else if(c < 0 ){
+            System.out.println(" Line1 is lesser and Line2 is greater ");
+        }
         else{
-            System.out.println("Not equal");
+            System.out.println("Line1 is greater and Line2 is lesser");
         }
 }
 
